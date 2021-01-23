@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../components/Namaz.css';
 
 const Namaz = () => {
-    const api = 'http://api.aladhan.com/v1/timingsByCity?city=Sarajevo&country=United Arab Emirates&method=8'
+    const api = 'http://api.aladhan.com/v1/timingsByCity?city=Sarajevo&country=Bosnia and Herzegovina&method=8'
 
     const [namaz, setNamaz] = useState(null)
 
@@ -18,11 +18,36 @@ const Namaz = () => {
     if(namaz) {
         return (
             <div className="namazi">
-                <p>Sabah : {namaz.data.timings.Fajr}</p>
-                <p>Podne : {namaz.data.timings.Dhuhr}</p>
-                <p>Ikindija : {namaz.data.timings.Asr}</p>
-                <p>Akšam : {namaz.data.timings.Maghrib}</p>
-                <p>Jacija : {namaz.data.timings.Isha}</p>
+                <div className="header">
+                    <h3>Sabah</h3>
+                    <div className="time">
+                    {namaz.data.timings.Fajr}
+                    </div>
+                </div>
+                <div className="header">
+                    <h3>Podne</h3>
+                    <div className="time">
+                    {namaz.data.timings.Dhuhr}
+                    </div>
+                </div>
+                <div className="header">
+                    <h3>Ikindija</h3>
+                    <div className="time">
+                    {namaz.data.timings.Asr}
+                    </div>
+                </div>
+                <div className="header">
+                    <h3>Akšam</h3>
+                    <div className="time">
+                    {namaz.data.timings.Maghrib}
+                    </div>
+                </div>
+                <div className="header">
+                    <h3>Jacija</h3>
+                    <div className="time">
+                    {namaz.data.timings.Isha}
+                    </div>
+                </div>
             </div>
         )
     }

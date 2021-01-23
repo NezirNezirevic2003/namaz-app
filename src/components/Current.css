@@ -15,3 +15,9 @@
 .current {
     margin-top: 10%;
 }
+
+@media (max-width: 500px) {
+    .current {
+        margin-top: 20%;
+    }
+}
