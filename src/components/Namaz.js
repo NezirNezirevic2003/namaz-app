@@ -17,7 +17,11 @@ const Namaz = () => {
 
     if(namaz) {
         return (
-            <div className="namazi">
+            <main>
+                <div className="timezone">
+                    <h1>{namaz.data.meta.timezone}</h1>
+                </div>
+                <div className="namazi">
                 <div className="header">
                     <h3>Sabah</h3>
                     <div className="time">
@@ -49,6 +53,8 @@ const Namaz = () => {
                     </div>
                 </div>
             </div>
+        </main>
+            
         )
     }
 
