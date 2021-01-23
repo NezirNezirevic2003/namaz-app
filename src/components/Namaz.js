@@ -18,11 +18,11 @@ const Namaz = () => {
     if(namaz) {
         return (
             <div className="namazi">
-                <h1>{namaz.data.timings.Fajr}</h1>
-                <h1>{namaz.data.timings.Dhuhr}</h1>
-                <h1>{namaz.data.timings.Asr}</h1>
-                <h1>{namaz.data.timings.Maghrib}</h1>
-                <h1>{namaz.data.timings.Isha}</h1>
+                <p>Sabah : {namaz.data.timings.Fajr}</p>
+                <p>Podne : {namaz.data.timings.Dhuhr}</p>
+                <p>Ikindija : {namaz.data.timings.Asr}</p>
+                <p>Akšam : {namaz.data.timings.Maghrib}</p>
+                <p>Jacija : {namaz.data.timings.Isha}</p>
             </div>
         )
     }
