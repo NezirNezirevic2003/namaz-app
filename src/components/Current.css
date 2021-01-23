@@ -1,0 +1,17 @@
+.current__time {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.current__date {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.current {
+    margin-top: 10%;
+}
