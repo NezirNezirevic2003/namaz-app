@@ -3,7 +3,8 @@ import axios from 'axios';
 import '../components/Namaz.css';
 
 const Namaz = () => {
-    const api = 'http://api.aladhan.com/v1/timingsByCity?city=Sarajevo&country=Bosnia and Herzegovina&method=8'
+
+    const api = 'http://api.aladhan.com/v1/timingsByCity?city=Warsaw&country=Bosnia and Herzegovina&method=8'
 
     const [namaz, setNamaz] = useState(null)
 
