@@ -31,3 +31,10 @@
         margin-top: 20%;
     }
 }
+
+@media (max-width: 800px) {
+    .timezone {
+        margin-top: 4%;
+    }
+
+}

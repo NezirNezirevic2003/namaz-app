@@ -31,7 +31,7 @@ export default function Current() {
             <main>
                 <div className="current">
                     <p className="current__time"> Vrijeme : {date.toLocaleTimeString()}</p>
-                    <p className="current__date"> Datum : {hijra}</p>
+                    <p className="current__date"> Hidžretski datum : {hijra}</p>
                </div>
             </main>
         )
