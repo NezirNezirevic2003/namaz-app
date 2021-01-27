@@ -2,10 +2,9 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 import '../components/Namaz.css';
 
-const Namaz = () => {
-
+export default function Namaz() {
+    
     const api = 'http://api.aladhan.com/v1/timingsByCity?city=Sarajevo&country=Bosnia and Herzegovina&method=8'
-
     const [namaz, setNamaz] = useState(null)
 
     useEffect(() => {
@@ -55,15 +54,13 @@ const Namaz = () => {
                 </div>
             </div>
         </main>
-            
         )
     }
 
     return (
         <div>
-            <h1>hello</h1>
+            
         </div>
     );
 }
 
-export default Namaz
