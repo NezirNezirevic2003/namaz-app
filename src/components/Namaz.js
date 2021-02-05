@@ -11,7 +11,6 @@ export default function Namaz() {
     try {
       const fetchNamaz = async () => {
         const response = await axios.get(api);
-        console.log(response.data);
         setNamaz(response.data);
         setIsloading(false);
       };

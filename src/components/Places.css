@@ -12,14 +12,6 @@ body {
   background-size: cover;
 }
 
-.header_icon {
-  position: relative;
-  margin-top: 10px;
-  margin-left: 5px;
+.header_name {
   color: white;
-}
-
-.header_icon:hover {
-  color: #c2c2c2;
-  cursor: pointer;
 }
