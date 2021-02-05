@@ -14,4 +14,97 @@ body {
 
 .header_name {
   color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.mjesta {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 3rem;
+  color: white;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: inherit;
+  list-style: none;
+}
+
+.mjesto_1:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_2:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_3:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_4:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_5:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_6:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_7:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_8:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_9:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_10:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_11:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.mjesto_12:hover {
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .mjesta {
+    grid-template-columns: (2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .mjesta {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .mjesta {
+    margin-top: 10%;
+  }
 }

@@ -13,6 +13,9 @@ const App = (props) => {
     <Router>
       <>
         <Switch>
+          <Route path="/banja-luka">
+            <h1>hello</h1>
+          </Route>
           <Route path="/places">
             <Places/>
           </Route>
