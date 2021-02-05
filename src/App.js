@@ -4,10 +4,10 @@ import Current from './components/Current';
 import Namaz from './components/Namaz';
 import Header from './components/Header';
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <Header/>
+      <Header name="Vrijeme Namaza"/>
       <Current/>
       <Namaz/>
     </div>

@@ -1,65 +1,72 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import '../components/Namaz.css';
+import React from 'react';
 
 export default function Namaz() {
     
-    const api = 'http://api.aladhan.com/v1/timingsByCity?city=Sarajevo&country=Bosnia and Herzegovina&method=8'
+    const api = 'https://api.vaktija.ba/vaktija/v1/77'
     const [namaz, setNamaz] = useState(null)
-
+    const [isLoading, setIsloading] = useState(true)
     useEffect(() => {
-        axios.get(api)
-        .then(response => {
-            setNamaz(response.data)
-        })
-
-    }, [api])
+        try {
+            const fetchNamaz = async () => {
+                const response = await axios.get(api)
+                console.log(response.data)
+                setNamaz(response.data)
+                setIsloading(false)
+            }
+            fetchNamaz()
+        } catch(error) {
+            console.error(error)
+        }
+    }, [])
 
     if(namaz) {
         return (
-            <main>
+            <React.Fragment>
                 <div className="timezone">
-                    <h1>{namaz.data.meta.timezone}</h1>
+                    <h2>Hidzretski datum: {namaz.datum[0]}</h2>
                 </div>
                 <div className="namazi">
                 <div className="header">
                     <h3>Sabah</h3>
                     <div className="time">
-                    {namaz.data.timings.Fajr}
+                    {namaz.vakat[0]}
                     </div>
                 </div>
                 <div className="header">
                     <h3>Podne</h3>
                     <div className="time">
-                    {namaz.data.timings.Dhuhr}
+                    {namaz.vakat[2]}
                     </div>
                 </div>
                 <div className="header">
                     <h3>Ikindija</h3>
                     <div className="time">
-                    {namaz.data.timings.Asr}
+                    {namaz.vakat[3]}
                     </div>
                 </div>
                 <div className="header">
                     <h3>Akšam</h3>
                     <div className="time">
-                    {namaz.data.timings.Maghrib}
+                    {namaz.vakat[4]}
                     </div>
                 </div>
                 <div className="header">
                     <h3>Jacija</h3>
                     <div className="time">
-                    {namaz.data.timings.Isha}
+                    {namaz.vakat[5]}
                     </div>
                 </div>
-            </div>
-        </main>
+                </div>
+        </React.Fragment>
         )
     }
 
     return (
         <div>
-            
+            {isLoading}
         </div>
     );
 }

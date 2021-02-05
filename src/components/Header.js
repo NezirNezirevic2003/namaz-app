@@ -1,13 +1,15 @@
 import React from 'react'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import '../components/Header.css';
 
-export default function Header() {
+export default function Header(props) {
     return (
-        <div>
+        <React.Fragment>
             <header className="header">
-                <LocationOnIcon style={{color: 'white'}}/>
+                <LocationOnIcon className="header_icon" style={{color: 'white', fontSize: '40px'}}/>
+                
             </header>
-        </div>
+        </React.Fragment>
 
     );
 }

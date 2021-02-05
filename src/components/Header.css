@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header_icon {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+}

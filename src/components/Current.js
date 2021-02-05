@@ -6,10 +6,7 @@ import '../components/Namaz.css';
 
 export default function Current() {
 
-    const today = new Date().toLocaleDateString()
-    const api = `http://api.aladhan.com/v1/gToH?date=${today}`
     const [date, setDate] = useState(new Date());
-    const [hijra, setHijra] = useState([null])
     
     useEffect(() => {
         const timer = setInterval(()=>setDate(new Date()), 1000 )
@@ -18,20 +15,12 @@ export default function Current() {
         }
     });
 
-    useEffect(() => {
-        axios.get(api)
-        .then(response => {
-            setHijra(response.data.data.hijri.date)
-        })
-
-    }, [api])
-
-    if(hijra) {
+ 
+    if(date) {
         return (
             <main>
                 <div className="current">
                     <p className="current__time"> Vrijeme : {date.toLocaleTimeString()}</p>
-                    <p className="current__date"> Hidžretski datum : {hijra}</p>
                </div>
             </main>
         )
