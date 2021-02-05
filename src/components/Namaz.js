@@ -26,6 +26,9 @@ export default function Namaz() {
         <div className="timezone">
           <h2>Hidžretski datum: {namaz.datum[0]}</h2>
         </div>
+        <div className="lokacija">
+          <h2>Lokacija: {namaz.lokacija}</h2>
+        </div>
         <div className="namazi">
           <div className="header">
             <h3>Sabah</h3>
