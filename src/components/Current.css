@@ -1,23 +1,23 @@
 .current__time {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .current__date {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .current {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 @media (max-width: 500px) {
-    .current {
-        margin-top: 20%;
-    }
+  .current {
+    margin-top: 20%;
+  }
 }
