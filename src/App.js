@@ -23,73 +23,73 @@ const App = (props) => {
     <Router>
       <>
         <Switch>
-        <Route path="/zvornik">
-            <Header/>
-            <Current/>
-            <Zvornik/>
+          <Route path="/zvornik">
+            <Header />
+            <Current />
+            <Zvornik />
           </Route>
-        <Route path="/zivinice">
-            <Header/>
-            <Current/>
-            <Zivinice/>
+          <Route path="/zivinice">
+            <Header />
+            <Current />
+            <Zivinice />
           </Route>
           <Route path="/bihac">
-            <Header/>
-            <Current/>
-            <Bihac/>
+            <Header />
+            <Current />
+            <Bihac />
           </Route>
           <Route path="/visoko">
-            <Header/>
-            <Current/>
-            <Visoko/>
+            <Header />
+            <Current />
+            <Visoko />
           </Route>
-        <Route path="/cazin">
-            <Header/>
-            <Current/>
-            <Cazin/>
+          <Route path="/cazin">
+            <Header />
+            <Current />
+            <Cazin />
           </Route>
-        <Route path="/doboj">
-            <Header/>
-            <Current/>
-            <Doboj/>
+          <Route path="/doboj">
+            <Header />
+            <Current />
+            <Doboj />
           </Route>
           <Route path="/mostar">
-            <Header/>
-            <Current/>
-            <Mostar/>
+            <Header />
+            <Current />
+            <Mostar />
           </Route>
           <Route path="/prijedor">
-            <Header/>
-            <Current/>
-            <Prijedor/>
+            <Header />
+            <Current />
+            <Prijedor />
           </Route>
-        <Route path="/bijeljina">
-            <Header/>
-            <Current/>
-            <Bijeljina/>
+          <Route path="/bijeljina">
+            <Header />
+            <Current />
+            <Bijeljina />
           </Route>
-        <Route path="/zenica">
-            <Header/>
-            <Current/>
-            <Zenica/>
+          <Route path="/zenica">
+            <Header />
+            <Current />
+            <Zenica />
           </Route>
           <Route path="/tuzla">
-            <Header/>
-            <Current/>
-            <Tuzla/>
+            <Header />
+            <Current />
+            <Tuzla />
           </Route>
           <Route path="/banja-luka">
-            <Header/>
-            <Current/>
-            <BanjaLuka/>
+            <Header />
+            <Current />
+            <BanjaLuka />
           </Route>
           <Route path="/places">
-            <Places/>
+            <Places />
           </Route>
           <Route path="/">
-            <Header/>
-            <Current/>
-            <Namaz/>
+            <Header />
+            <Current />
+            <Namaz />
           </Route>
         </Switch>
       </>

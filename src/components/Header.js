@@ -8,7 +8,10 @@ export default function Header() {
     <React.Fragment>
       <header className="header">
         <Link to="/places">
-          <LocationOnIcon className="header_icon" style={{ fontSize: "40px" }} />
+          <LocationOnIcon
+            className="header_icon"
+            style={{ fontSize: "40px" }}
+          />
         </Link>
       </header>
     </React.Fragment>
